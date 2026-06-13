@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Notes</title>
+  </head>
+  <body>
+    <h1>My Notes</h1>
+    <input id="q" placeholder="search" />
+    <button onclick="search()">Go</button>
+    <div id="results"></div>
+    <div id="welcome"></div>
+    <script src="app.js"></script>
+    <script>
+      // greet the user by name from the URL (?name=...)
+      const params = new URLSearchParams(location.search);
+      document.getElementById("welcome").innerHTML =
+        "Welcome back, " + params.get("name");
+    </script>
+  </body>
+</html>
