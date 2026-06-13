@@ -1,0 +1,13 @@
+{
+  "name": "notes-api",
+  "version": "1.0.0",
+  "description": "Tiny notes API (demo target for deep-code-review)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}
